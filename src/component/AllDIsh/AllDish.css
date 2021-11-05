@@ -1,0 +1,60 @@
+.card{
+    border: 2px solid black;
+    width: 210px;
+    margin: 20px;
+    display: inline-block;
+    background:white;
+}
+.cardname{
+    
+    color:rgb(0, 0, 0);
+    
+    text-align: center;
+}
+.cardd,.cardprice{
+    color:black;
+    text-align: center;
+}
+.cardbtn{
+  width: 70%;
+  height: 20%;
+  border: 5px solid black;
+  border: 20px;
+  margin-left: 13%;
+  margin-bottom: 2%;
+}
+.h1{
+    color: white;
+    text-align: center;
+   
+    
+    
+}
+  .icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 55px;
+    margin-top: -10px;
+
+} 
+
+.display{
+     display: inline-block;
+     height: 100px;
+     width: 1000px;
+} 
+.badge{
+   font-size: 16px;
+   background-color: black;
+    color: white;
+    border-radius:100px;
+    margin-top: 10px !important;
+    margin-left: -20px;
+    
+   
+    
+  
+   
+    
+}
+ 

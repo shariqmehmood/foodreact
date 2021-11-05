@@ -1,0 +1,17 @@
+.cardbt{
+    color: black;
+    background-color: burlywood;
+    width: 32%;
+    display: inline-block;
+    margin: 1px;
+    padding: 0px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    
+    transition:  2s;
+    
+}
+.cardbt:hover{
+  border: 1px solid black;
+  border-radius:0px;
+}
