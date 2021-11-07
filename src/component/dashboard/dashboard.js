@@ -31,7 +31,7 @@ function Dashboard(){
         <NavDropdown title="Acton Of Admin" id="basic-nav-dropdown">
           <NavDropdown.Item onClick={()=>{history.push("/AddDish")}}>AddDish</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item  onClick={()=>{history.push("/AllDish")}}>AllDIsh</NavDropdown.Item>
+          <NavDropdown.Item  onClick={()=>{history.push("/Alldishforseller")}}>AllDIsh</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item onClick={()=>{history.push("/Allorder")}}>AllOrders</NavDropdown.Item>
           <NavDropdown.Divider /> 
