@@ -15,6 +15,7 @@ import AddDish from "../AddDish/AddDish";
 import AllDish from "../AllDIsh/AllDish";
 import Allorder from "../Orders/order";
 import OrderList from "../OrderList/OrderList";
+import AllDishforseller from "../AllDIsh/alldishforseller";
 
 
 
@@ -33,6 +34,9 @@ function ReactRouter() {
                 </Route>
                 <Route  path='/Signin'>
                 <Signin/>
+                </Route>
+                <Route  path='/Alldishforseller'>
+                <AllDishforseller/>
                 </Route>
                 <Route  path='/Dashboard'>
                 <Dashboard/>

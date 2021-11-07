@@ -28,6 +28,8 @@ function Signup() {
          
         }
         );
+        alert("Please sign in")
+        history.push("/Signin")
           
         } catch (err) {
           setErrMsg(err.message);
@@ -74,7 +76,7 @@ function Signup() {
                 <option value='buyer'>buyer</option>
             </select>
 </div>
-      <button className="submit"  onClick={regesterme}> Signin</button>
+      <button className="submit"  onClick={regesterme}> Regesterme</button>
       <button className="submit"  onClick={()=>{history.push("/Signin")}}> What are u Regester</button>
 
       {errMsg ? <p>{errMsg}</p> : null}   

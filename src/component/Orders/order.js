@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react"
 import loddimg from "../../images/looding.gif"
 
 import "./order.css"
-import { db, addDoc, getDocs, collection } from "../router/firebase";
+import { db,  getDocs, collection } from "../router/firebase";
 
 export default function Allorder(){
     const [myorder, setmyorder] = useState([]);
-
+   
     useEffect(async () => {
 
         let getorder_from_fb = collection(db, 'CardfromCoustmer');
@@ -38,7 +38,7 @@ export default function Allorder(){
                     <h6 className="cardd" >Delivery{Dtype}</h6>
                     <button className="cardbt"> Recived</button>
                     <button className="cardbt"> pending</button>
-                    <button className="cardbt"> Dissmis</button>
+                    <button className="cardbt" > Dissmis</button>
                     
                 </div>
             )

@@ -61,7 +61,7 @@ function Signin() {
                 <option value='buyer'>Buyer</option>
             </select>
 </div>
-      <button className="submit"  onClick={regester}> Regester Me</button>
+      <button className="submit"  onClick={regester}> Signin</button>
       {errMsg ? <p>{errMsg}</p> : null}   
         <div>
 

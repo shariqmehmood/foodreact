@@ -15,6 +15,10 @@ function AllDish() {
     const [myDish, setMyDish] = useState([]);
 
     const [myorder, setmyorder] = useState([]);
+    // const [totalprice, settotalprice] = useState([0]);
+
+   
+
 
     useEffect(async () => {
 
@@ -34,14 +38,14 @@ function AllDish() {
 
     useEffect(async () => {
 
-        let gettweet = collection(db, 'DISH');
+        let getdish = collection(db, 'DISH');
 
-        let alltweet = await getDocs(gettweet);
-        let mytweetClone = myDish.slice(0);
-        alltweet.forEach((doc) => {
-            mytweetClone.push(doc.data());
+        let alldish = await getDocs(getdish);
+        let mydishclone = myDish.slice(0);
+        alldish.forEach((doc) => {
+            mydishclone.push(doc.data());
         });
-        setMyDish(mytweetClone);
+        setMyDish(mydishclone);
     }, [])
 
     return (
@@ -67,17 +71,21 @@ function AllDish() {
                     <div className="card" >
                         <img className="cardimg"  id={{ index }} style={{ width: 200, height: 200 }} src={loddimg} />
                         <h1 className="cardname">{name}</h1>
-                        <h4 className="cardprice">{Price}$</h4>
+                        <h4 className="cardprice">RS:{Price}</h4>
                         <h6 className="cardd" >Delivery{Dtype}</h6>
-                        <img className="cardbtn" onClick={() => {
+                        <img className="cardbtn"  onClick={() => {
                             {       
                                     let obj = {
                                     name: name,
                                     price: Price,
                                 }
+                                
+                             
+                                alert("carted")
                                 let input_text = collection(db, "CardfromCoustmer");
                                 addDoc(input_text, obj)
                                 console.log(obj)
+                                
                             }
                         }} src={btn} />
 
